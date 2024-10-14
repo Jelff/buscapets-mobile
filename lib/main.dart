@@ -33,7 +33,7 @@ class _BuscapetsAppState extends State<BuscapetsApp> {
     if (result.isNotEmpty) {
       setState(() {
         isFirstTime = false;
-        loggedInUser = result.first['primeiroNome']; // Exemplo de acesso ao nome do usuário
+        loggedInUser = result.first['primeiroNome'];
       });
     } else {
       setState(() {
@@ -47,6 +47,7 @@ class _BuscapetsAppState extends State<BuscapetsApp> {
     return MaterialApp(
       title: 'Buscapets',
       theme: ThemeData(
+        fontFamily: 'Montserrat',
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

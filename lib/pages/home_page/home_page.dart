@@ -8,14 +8,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Buscapets')),
+      appBar: AppBar(title: const Text('Buscapets')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Bem-vindo, $nomeUsuario!', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 20),
-            Text('Mais de 1000 pets registrados', style: TextStyle(fontSize: 16)),
+            Text('Bem-vindo, $nomeUsuario!', style: const TextStyle(fontSize: 24)),
+            const SizedBox(height: 20),
+            const Text('Mais de 1000 pets registrados', style: TextStyle(fontSize: 16)),
           ],
         ),
       ),
